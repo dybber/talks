@@ -1,0 +1,44 @@
+Coding Pirates: Teaching kids programming, IT-creativity and modern tech
+------------------------------------------------------------------------
+
+Abstract:
+
+Coding Pirates is a Danish initiative where volunteers teach kids to
+use their computers not as consumers, but as producers. Our
+philosophy, which might be a bit different from other initiatives, is
+that we should not just teach programming as a completely separate
+discipline. Instead we are teaching the kids to be creative,
+innovative and combine various skills to make their project ideas come
+true.
+
+Projects range from 2D/3D games, LEGO Mindstorm robots, Arduino based
+3D-printed submarine, computer generated music, to a creepy doll for a
+haunted house. Such projects not only requires programming, but also
+skills in graphics, 3D modelling, 3D printing, basic electronics,
+musicality, and especially: creativity!
+
+In addition to describing the general concept and ideology, the talk
+will also cover how we run the weekly sessions in practice. I will
+also mention what we have learned so far, what we see as the
+difficulties ahead, and why DIKU, the Department of Computer Science
+at University of Copenhagen, has involved itself so deeply in this
+endeavour.
+
+You will also get a brief look at visual programming language Scratch,
+which is where most of our kids start, and you will see examples of
+projects by some of our young programmers.
+
+Facts:
+ * 24 code clubs all over Denmark
+ * around 6 new code clubs starting January 2016
+ * more than 500 kids on the waiting list
+ * more than 225 volunteers (teachers, IT-professionals, librarians, IT-students)
+ * regular Hackathons and GameJams for the kids
+
+Speaker:
+  Martin Dybdal <dybber@dybber.dk>
+  Ph.D. student
+  DIKU, Department of Computer Science
+  University of Copenhagen
+
+  Visiting Chalmers until 31. januar 2016

@@ -1,0 +1,276 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usepackage{semantic}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{todonotes}
+\presetkeys{todonotes}{inline}{}
+
+\usepackage[absolute]{textpos}
+% This is to get textpos to play well,
+% A stackoverflow user mentioned that this could
+% cause problems in some Acrobat Reader versions
+% I'll take the chance
+\usebackgroundtemplate{}
+
+
+\mode<presentation> {
+\usetheme{boxes} % When headline is wanted use Dresden theme instead
+\usecolortheme{seagull}
+\setbeamertemplate{footline}[page number]
+\setbeamertemplate{navigation symbols}{}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[APL \& TAIL] % bottom of every slide
+  {Teaching kids programming, IT-creativity and modern tech} % title page
+
+\author{\footnotesize{Martin Dybdal} \\ \footnotesize{\texttt{dybber@dybber.dk}}}
+
+\institute {
+DIKU \\
+University of Copenhagen
+}
+
+\date{\footnotesize{Chalmers, 10 October 2015}}
+
+\date{10 November 2015}
+
+\begin{document}
+
+{
+\setbeamertemplate{headline}{}
+\begin{frame}
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{imagery/codingpirates.png}
+  \end{center}
+\vspace{-1cm}
+\titlepage
+\end{frame}
+}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+\frametitle{Overview}
+\tableofcontents
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	CONTENT
+%----------------------------------------------------------------------------------------
+
+\section{What is Coding Pirates?}
+\begin{frame}
+\frametitle{What is Coding Pirates?}
+
+\begin{textblock}{20}(5,5)
+ \includegraphics[width=\textwidth]{imagery/cpthack-and-miss1337.png}
+\end{textblock}
+
+\begin{itemize}
+\item Activity for kids aged 7-17 years
+\item A playground - not just two more hours of school
+\item An attempt to change the school system
+\end{itemize}
+\end{frame}
+
+\subsection{Who are Coding Pirates?}
+\begin{frame}
+\frametitle{Who are Coding Pirates?}
+\begin{itemize}
+\item Non-profit organisation
+\item +250 volunteers at Coding Pirates network
+\item $\sim$700 paying members
+\item 24 hubs in Denmark
+\item additional 6 hubs from January 2016
+\end{itemize}
+
+\todo{Image with kids!}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Partners}
+
+\begin{itemize}
+\item Center for Teaching Development and Digital Media, Aarhus
+  University
+\item Department of Computer Science, University of Copenhagen
+\item The libraries
+\item Microsoft
+\item The Danish IT Industri Association
+  \begin{itemize}
+  \item Computerworld
+  \item Canon
+  \item CapGemini
+  \item NNIT
+  \item \ldots
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\subsection{The Coding Pirates philosophy}
+\begin{frame}
+\frametitle{The Coding Pirates philosophy}
+
+\begin{quotation}
+  "The problems now faced by mankind are largely due to man's own
+  creativeness. Creativeness will need to account for much more if
+  present problems are to be transcended with solutions".
+
+  - Preface of "Explorations in Creativity", Editors: Ross L. Mooney,
+  Taher A. Razik
+\end{quotation}
+
+
+Manifesto: http://codingpirates.dk/manifesto/
+\end{frame}
+
+
+\section{Coding Pirates in practice}
+\begin{frame}
+\frametitle{A normal day at Coding Pirates}
+
+\end{frame}
+
+
+\subsection{Scratch}
+\begin{frame}
+\frametitle{Scratch}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Scratch 4 Arduino}
+
+\end{frame}
+
+% \section{Processing(.js)}
+% \begin{frame}
+% \frametitle{Processing(.js)}
+
+% \end{frame}
+
+\subsection{... and other technologies}
+\begin{frame}
+
+\frametitle{Other technologies used}
+\todo{find logos}
+
+\begin{itemize}
+\item Processing(.js) via KhanAcademy
+\item Arduino
+\item Blender (3D modelling)
+\item Unity (2D and 3D games)
+\item LEGO Mindstorms and LEGO WeDo (expensive)
+\item littleBits (expensive)
+\end{itemize}
+\end{frame}
+
+\subsection{Showcase of projects}
+
+\subsection{Difficulties ahead}
+\begin{frame}
+\frametitle{Difficulties identified}
+\begin{itemize}
+\item Few from age 14 and up
+\item Few girls
+\item Fostering friendships is hard, but important
+\item Further education of volunteers
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Age and gender (including waiting list)}
+  \centerline{\includegraphics[width=\textwidth]{../datacrunching/age-gender-hist}}
+\end{frame}
+
+\subsection{The Coding Pirates Community}
+\begin{frame}
+  \frametitle{Volunteer community}
+  \includegraphics[width=\textwidth]{imagery/unity-for-volunteers.jpg}
+\end{frame}
+
+
+\section{Computing in schools}
+\begin{frame}
+  \frametitle{Computing in schools}
+  \begin{quotation}
+    "The computer is the Proteus of machines. Its essence is its
+    universality, its power to simulate. Because it can take on a
+    thousand forms and can serve a thousand functions, it can appeal
+    to a thousand tastes."
+
+    - Seymour Papert, in Mindstorms
+  \end{quotation}
+
+  We can already use this when teaching e.g. history, biology, chemistry,
+  or language classes!
+
+  \begin{itemize}
+  \item Make a game that teaches grade $N-1$ about photosynthesis
+  \item Make a game that teaches grade $N-1$ about life in ancient Rome
+  \item Make an interactive story that tells the story XYZ
+  \end{itemize}
+
+  More fun than a poster or a written report!
+\end{frame}
+
+\begin{frame}
+  \frametitle{But what do we want schools to teach?}
+
+  \begin{itemize}
+  \item Teach computing as a discipline, e.g. like math
+    \begin{itemize}
+    \item Algorithms vs. data
+    \item Systematic problem solving
+    \item Computational thinking
+    \end{itemize}
+  \item Teach computing as a craft/skill, e.g. like woodwork
+    \begin{itemize}
+    \item Focus on creation and tools
+    \item Creative and reflective thinking
+    \end{itemize}
+  \item As a separate discipline or inside other classes?
+  \end{itemize}
+\end{frame}
+
+\section{DIKU's involvement}
+\begin{frame}
+\frametitle{Why does a university use time teaching tweens and teens?}
+\begin{itemize}
+\item The teachers needs our expertise
+\item Defining how computing should be taught in Schools
+\item Potential research areas
+\item Teacher education and re-education
+\item Because we have connections to potential volunteers (e.g. alumni)
+\item Good publicity and great advertisement
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Links}
+  \begin{itemize}
+  \item Coding Pirates website: http://codingpirates.dk
+  \item Manifesto: http://codingpirates.dk/manifesto/
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Coding Pirates in Gothenburg?}
+  \begin{center}
+    \includegraphics[origin=c,angle=-20,width=0.7\textwidth]{imagery/wanted}
+  \end{center}
+
+\end{frame}
+
+
+\end{document}
