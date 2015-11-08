@@ -64,9 +64,9 @@ age_reldiff <-
 dif <- girlages/(girlages+boyages)
 girl_percentage <-
     ggplot() + aes(x=ages,y=dif) +
-    coord_cartesian(xlim = c(4, 16)) +
+    coord_cartesian(xlim = c(4, 18)) +
     geom_bar(stat="identity") +
-    scale_x_discrete(limits=seq(5,15)) +
+    scale_x_discrete(limits=seq(5,17)) +
     xlab("Age") + ylab("Percentage of girls") +
     ggtitle("Percentage of girls by age")
     ## theme(plot.title = element_text(lineheight=1.2, face="bold"))
@@ -83,8 +83,10 @@ pdf("age-gender-hist.pdf", width=6, height=4)
 grid.arrange(age_gender_hist)
 dev.off()
 
-pdf("age-reldiff.pdf", width=15, height=7)
-grid.arrange(age_reldiff,
-             girl_percentage,
-             ncol=2)
+pdf("age-reldiff.pdf", width=6, height=4)
+grid.arrange(age_reldiff)
+dev.off()
+
+pdf("girl_percentage.pdf", width=6, height=4)
+grid.arrange(girl_percentage)
 dev.off()
