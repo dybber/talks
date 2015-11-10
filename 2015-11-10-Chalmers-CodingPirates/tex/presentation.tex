@@ -7,7 +7,7 @@
 \usepackage{todonotes}
 \presetkeys{todonotes}{inline}{}
 
-\usepackage[absolute]{textpos}
+\usepackage[absolute,overlay]{textpos}
 % This is to get textpos to play well,
 % A stackoverflow user mentioned that this could
 % cause problems in some Acrobat Reader versions
@@ -71,7 +71,7 @@ University of Copenhagen
 \begin{frame}
 \frametitle{What is Coding Pirates?}
 \begin{textblock}{20}(5,5)
- \includegraphics[width=\textwidth]{imagery/cpthack-and-miss1337.png}
+ \includegraphics[width=\textwidth]{imagery/cpthack-and-miss1337-transp.png}
 \end{textblock}
 
 \begin{itemize}
@@ -88,6 +88,9 @@ University of Copenhagen
 \begin{itemize}
 \item Non-profit organisation
 \item +250 volunteers in Coding Pirates network
+  \begin{itemize}
+  \item Teachers, IT professionals, researchers, librarians, IT students
+  \end{itemize}
 \item $\sim$700 paying members
 \item 24 hubs in Denmark
 \item additional 6 hubs from January 2016
@@ -116,10 +119,50 @@ University of Copenhagen
 \end{itemize}
 \end{frame}
 
+\subsection{Motivation}
+
+\begin{frame}
+\frametitle{Motivation}
+
+\begin{textblock}{16}(0,2)
+{
+\setlength{\fboxsep}{0pt}%
+\setlength{\fboxrule}{1pt}%
+\only<2>{\centerline{\fbox{\includegraphics[width=0.5\textwidth]{imagery/ugebreveta4-automatisering}}}}
+\only<4>{\centerline{\fbox{\includegraphics[width=0.5\textwidth]{imagery/skat-efi}}}}
+\only<6>{\centerline{\fbox{\includegraphics[width=0.7\textwidth]{imagery/ip_allplots}}}}
+\only<7>{\centerline{\fbox{\includegraphics[width=0.5\textwidth]{imagery/toiletpaper-carousel}}}}
+}
+\end{textblock}
+
+\only<1-7>{
+\begin{itemize}
+\item Digital revolution, Information Age.
+\item Democracy: New tech requires new policies. The public
+  should be able to make informed decisions
+\item Automatisation
+\item Big IT projects $=>$ big problems! Decision makers needs an upgrade
+\item Computational thinking is useful everywhere!
+\item Because it's 2015!
+\end{itemize}
+}\end{frame}
+
+
 \subsection{The Coding Pirates philosophy}
 \begin{frame}
 \frametitle{The Coding Pirates philosophy}
 
+\begin{itemize}
+\item Inspiration from Maker-movement
+\item Design thinking
+\item Curiosity, exploration
+\item Courage, Zest
+\item Computational thinking
+\end{itemize}
+
+Manifesto: \url{http://codingpirates.dk/manifesto/}
+
+\vspace{5mm}
 \begin{quotation}
   "The problems now faced by mankind are largely due to man's own
   creativeness. Creativeness will need to account for much more if
@@ -128,9 +171,6 @@ University of Copenhagen
   - Preface of "Explorations in Creativity", Editors: Ross L. Mooney,
   Taher A. Razik
 \end{quotation}
-
-
-Manifesto: http://codingpirates.dk/manifesto/
 \end{frame}
 
 \begin{frame}
@@ -142,6 +182,8 @@ Manifesto: http://codingpirates.dk/manifesto/
 
   \url{https://www.youtube.com/watch?v=Mc21BbiUGxU}
 \end{frame}
+
+
 
 \section{Coding Pirates in practice}
 \begin{frame}
@@ -156,8 +198,8 @@ Manifesto: http://codingpirates.dk/manifesto/
 \end{textblock}
 
 \begin{itemize}
-\item ~25-30 kids
-\item ~7-10 volunteers
+\item $\sim$25-30 kids
+\item $\sim$7-10 volunteers
 \item 2 hours a week, usually 17:00-19:00
 \item 15 minutes break with snacks, cool aid, fruit etc.
 \item Bring your own device (BYOD)
@@ -186,18 +228,45 @@ Manifesto: http://codingpirates.dk/manifesto/
 
 \end{frame}
 
+\begin{frame}
+ \vspace{5mm}
+ \includegraphics[width=\textwidth]{imagery/codingpirates-diku}
+\end{frame}
+
+\begin{frame}
+ \vspace{5mm}
+ \includegraphics[width=\textwidth]{imagery/william-sofie}
+\end{frame}
+
+\begin{frame}
+ \vspace{5mm}
+ \includegraphics[width=\textwidth]{imagery/arduino-workshop}
+\end{frame}
+
+\begin{frame}
+ \vspace{5mm}
+ \includegraphics[width=\textwidth]{imagery/august-mindstorms}
+\end{frame}
+
+\begin{frame}
+ \vspace{5mm}
+ \includegraphics[width=\textwidth]{imagery/mindstorms-presentation}
+\end{frame}
+
+
 
 
 \subsection{Scratch}
 \begin{frame}
-\frametitle{Scratch}
+\vspace{1cm}
+ \includegraphics[width=\textwidth]{imagery/scratch-logo}
 
 \end{frame}
 
-\begin{frame}
-\frametitle{Scratch 4 Arduino}
+% \begin{frame}
+% \frametitle{Scratch 4 Arduino}
 
-\end{frame}
+% \end{frame}
 
 % \section{Processing(.js)}
 % \begin{frame}
@@ -260,11 +329,14 @@ Manifesto: http://codingpirates.dk/manifesto/
 
 \subsection{Difficulties ahead}
 \begin{frame}
-\frametitle{Difficulties identified}
+\frametitle{Difficulties}
 \begin{itemize}
 \item Few from age 14 and up
 \item Few girls
 \item Fostering friendships is hard, but important
+  \begin{itemize}
+  \item Force pair programming?
+  \end{itemize}
 \item Further education of volunteers
 \end{itemize}
 \end{frame}
@@ -345,12 +417,9 @@ Manifesto: http://codingpirates.dk/manifesto/
 \end{frame}
 
 \begin{frame}
-  \frametitle{Links}
-  \begin{itemize}
-  \item Coding Pirates website: http://codingpirates.dk
-  \item Manifesto: http://codingpirates.dk/manifesto/
-  \end{itemize}
+  \centerline{\includegraphics[width=\textwidth]{imagery/brickbacker}}
 \end{frame}
+
 
 \begin{frame}
   \frametitle{Coding Pirates in Gothenburg?}
@@ -358,6 +427,18 @@ Manifesto: http://codingpirates.dk/manifesto/
     \includegraphics[origin=c,angle=-20,width=0.7\textwidth]{imagery/wanted}
   \end{center}
 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Links}
+  \begin{itemize}
+  \item Website: http://codingpirates.dk
+  \item Facebook: https://www.facebook.com/codingpirates
+  \item Manifesto: http://codingpirates.dk/manifesto/
+  \item Scratch labyrinth: https://scratch.mit.edu/projects/55351416/
+  \item Brickbacker: http://brickbacker.com/product/codingpirates/
+  \item DigiPippi: http://digipippi.dk
+  \end{itemize}
 \end{frame}
 
 

@@ -12,11 +12,7 @@ alle <- rbind(drenge, piger)
 alle$Gender <- factor(alle$Gender, levels = c("Girl", "Boy"))
 
 # Remove all below age 4
-#alle <- alle[alle$Alder >= 4,]
-
-alle <- alle[alle$Alder >= 5,]
-alle <- alle[alle$Alder < 16,]
-
+alle <- alle[alle$Alder >= 4,]
 
 piger_alder_hist <-
     ggplot(data=subset(alle, (Gender == "Girl")), aes(Alder), xlab="Age") +
@@ -24,8 +20,8 @@ piger_alder_hist <-
     geom_bar(binwidth=1) +
     scale_x_discrete(limits=seq(4,18)) +
     xlab("Age") + ylab("Count") +
-    ggtitle("Girls, age distribution") + 
-    theme(plot.title = element_text(lineheight=.8, face="bold"))
+    ggtitle("Girls, age distribution") 
+    ## theme(plot.title = element_text(lineheight=.8, face="bold"))
 
 drenge_alder_hist <-
     ggplot(data=subset(alle, (Gender == "Boy")), aes(Alder), xlab="Age") +
@@ -33,17 +29,20 @@ drenge_alder_hist <-
     geom_bar(binwidth=1) +
     scale_x_discrete(limits=seq(4,18)) +
     xlab("Age") + ylab("Count") +
-    ggtitle("Boys, age distribution") + 
-    theme(plot.title = element_text(lineheight=1.2, face="bold"))
+    ggtitle("Boys, age distribution")
+    ##theme(plot.title = element_text(lineheight=1.2, face="bold"))
 
 age_gender_hist <-
-    ggplot(data=alle, aes(alle$Alder,fill=Gender)) +
+    ggplot(data=alle, aes(Alder,fill=Gender)) +
     coord_cartesian(xlim = c(3, 19)) +
     geom_bar() +
     scale_x_discrete(limits=seq(4,18)) +
     xlab("Age") + ylab("Count") +
-    ggtitle("Age distribution by gender") + 
-    theme(plot.title = element_text(lineheight=1.2, face="bold"))
+    ggtitle("Age distribution by gender")
+    ##theme(plot.title = element_text(lineheight=1.2, face="bold"))
+
+alle <- alle[alle$Alder >= 5,]
+alle <- alle[alle$Alder < 16,]
 
 summarized <- ddply(alle, .(Alder,Gender), summarize, count = length(Alder))
 
@@ -65,7 +64,7 @@ dif <- girlages/(girlages+boyages)
 girl_percentage <-
     ggplot() + aes(x=ages,y=dif) +
     coord_cartesian(xlim = c(4, 18)) +
-    geom_bar(stat="identity") +
+    geom_bar(stat="identity", fill="#009E73") +
     scale_x_discrete(limits=seq(5,17)) +
     xlab("Age") + ylab("Percentage of girls") +
     ggtitle("Percentage of girls by age")
