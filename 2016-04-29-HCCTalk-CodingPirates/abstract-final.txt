@@ -1,0 +1,37 @@
+Title:
+
+Coding Pirates: Teaching kids programming and IT-creativity
+
+
+
+Abstract:
+
+Coding Pirates is a Danish initiative teaching kids computing in its
+broadest sense. We believe that programming should not just be taught
+as an independent discipline. We should teach it along with creativity
+and design skills.
+
+Projects range from 2D/3D games, Arduino based 3D-printed submarine,
+computer generated music, stop-motion videos, to a creepy doll for a
+haunted house. Such projects not only requires programming, but also
+skills in graphics, 3D modelling, 3D printing, basic electronics,
+musicality, and especially creativity!
+
+Coding Pirates is volunteer run and we host a Coding Pirates chapter
+here at DIKU, with most of our teachers being DIKU alumni. In addition
+to describing the general concept and ideology, the talk will also
+cover what we have learned so far, what we see as the difficulties
+ahead, and why I think it is important for DIKU and University of
+Copenhagen to participate in this movement.
+
+Facts:
+ * 30+ code clubs all over Denmark
+ * 1000+ kids on the waiting list
+ * 300+ volunteers (teachers, IT-professionals, librarians, IT-students)
+ * regular Hackathons and GameJams for the kids
+
+
+Martin Dybdal <dybber@dybber.dk>
+Ph.D. student
+DIKU, Department of Computer Science
+University of Copenhagen

@@ -1,0 +1,95 @@
+Quotes etc.
+-----------
+
+"The problems now faced by mankind are largely due to man's own
+creativeness. Creativeness will need to account for much more if
+present problems are to be transcended with solutions".
+ - Preface of "Explorations in Creativity",
+   Editors: Ross L. Mooney, Taher A. Razik
+
+
+Zest, "Keep On, Keepin' On"
+KIPP Schools
+
+"Playing Angry Birds is not learning physics!"
+
+--------------------------
+
+Disposition
+-----------
+
+ * Forklar en almindelig aften
+
+ * Argumenter for kreativ IT
+
+ * Forklar om de forskellige alderstrin
+
+ * De færreste arbejder derhjemme (ind til videre)
+
+ * Stort set kun drenge - det er nemmest at få pigerne med når de er
+   unge (7 år)
+
+
+Showcase
+---------------------------
+ * Scratch - gennemgå Labyrint-spil? (offline-Scratch)
+           - vis aoxfarlig-spil
+
+ * Scratch4Arduino - Etch A Sketch el. ping pong
+
+ * Processing.js & KhanAcademy ?
+
+ * Foto af 3D-printet figur
+
+---------------------------
+
+
+ * Forklar de forskellige faser i at
+
+ * Hvorfor på universitetet?
+
+  - Fordi vi ved bedst.
+
+  - For at gøre opmærksom på os selv. Det er god reklame.
+
+  - Fordi lærer-resurserne er her.
+
+ * Nævn seminarerne som et sted der skal fokus på
+   + planlagt efteruddannelseskursus for folkeskolelærere
+
+
+Using programming for other subjects
+------------------------------------
+"The computer is the Proteus of machines. Its essence is its
+universality, its power to simulate. Because it can take on a thousand
+forms and can serve a thousand functions, it can appeal to a thousand
+tastes."
+  - Seymour Papert, in Mindstorms
+
+
+Computing in school
+-------------------
+
+ * Teach Computer Science as a separate discipline, as in UK?
+   (Computational thinking, data structures, algorithms)
+
+ * Teach programming as a skill, that can be used in other fields,
+   physics, language, religion etc.?
+
+ * Teach a programming as a craft, e.g. like arts and woodwork
+   classes. "Creative IT"?
+
+
+Fra Martin Exner
+----------------
+
+ * Husk at CoderDojo er kæmpe store
+    - de køber måske ikke "endnu et kodeklub" koncept
+ * Husk at nævn hvorfor vi kræver betaling
+    - penge til bedre udstyr
+    - større landsdækkende arrangementer
+ * Husk at nævne at de starter afdeling i Karlshamn
+    Magnus Göransson magnus.goransson@okatima.se
+
+ * Martin's slides:
+   https://docs.google.com/presentation/d/1_i_pBiFw2KEZ_vlXWy4vVFeGfpBxLgNkqb8z2MgrLpg/edit#slide=id.gdd21d0797_2_6
