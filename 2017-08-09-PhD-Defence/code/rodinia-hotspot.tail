@@ -1,0 +1,22 @@
+let v2:[double]1 = readDoubleVecFile(['.','.','/','d','a','t','a','/','t','e','m','p','_','5','1','2']) in
+let v3:[double]1 = readDoubleVecFile(['.','.','/','d','a','t','a','/','p','o','w','e','r','_','5','1','2']) in
+let v4:[double]2 = mem(reshape{[double],[1,2]}([512,512],v2)) in
+let v5:[double]2 = mem(reshape{[double],[1,2]}([512,512],v3)) in
+bench{[double],[]}(fn v86:[double]0 => let v103:[double]0 = divd(0.016,512.0) in
+        let v104:[double]0 = divd(0.016,512.0) in
+        let v105:[double]0 = muld(0.5,muld(1.75e6,muld(5e-4,muld(v104,v103)))) in
+        let v106:[double]0 = divd(v104,muld(2.0,muld(100.0,muld(5e-4,v103)))) in
+        let v107:[double]0 = divd(v103,muld(2.0,muld(100.0,muld(5e-4,v104)))) in
+        let v108:[double]0 = divd(5e-4,muld(100.0,muld(v103,v104))) in
+        let v109:[double]0 = divd(3e6,437.5) in
+        let v110:[double]0 = divd(1e-3,v109) in
+        let v114:[int]2 = cons{[int],[1]}(each{[bool,int],[1]}(b2i,reshape{[bool],[1,1]}([512],[tt])),snoc{[int],[1]}(reshape{[int],[1,2]}([512,510],[2]),each{[bool,int],[1]}(b2i,reshape{[bool],[1,1]}([512],[tt])))) in
+        let v117:[int]2 = transp{[int],[2]}(cons{[int],[1]}(each{[bool,int],[1]}(b2i,reshape{[bool],[1,1]}([512],[tt])),snoc{[int],[1]}(reshape{[int],[1,2]}([512,510],[2]),each{[bool,int],[1]}(b2i,reshape{[bool],[1,1]}([512],[tt]))))) in
+        reduce{[double],[0]}(maxd,-inf,reduce{[double],[1]}(maxd,-inf,power{[double],[2]}(fn v118:[double]2 => let v123:[double]2 = cat{[double],[2]}(transp{[double],[2]}(drop{[double],[2]}(1,transp{[double],[2]}(v118))),each{[int,double],[2]}(i2d,each{[bool,int],[2]}(b2i,reshape{[bool],[1,2]}([512,1],[ff])))) in
+                              let v126:[double]2 = cat{[double],[2]}(each{[int,double],[2]}(i2d,each{[bool,int],[2]}(b2i,reshape{[bool],[1,2]}([512,1],[ff]))),transp{[double],[2]}(drop{[double],[2]}(-1,transp{[double],[2]}(v118)))) in
+                              let v134:[double]2 = zipWith{[double,double,double],[2]}(subd,zipWith{[double,double,double],[2]}(addd,v123,v126),zipWith{[double,double,double],[2]}(muld,each{[int,double],[2]}(i2d,v114),v118)) in
+                              let v137:[double]2 = transp{[double],[2]}(snoc{[double],[1]}(transp{[double],[2]}(drop{[double],[2]}(1,v118)),each{[int,double],[1]}(i2d,each{[bool,int],[1]}(b2i,reshape{[bool],[1,1]}([512],[ff]))))) in
+                              let v140:[double]2 = transp{[double],[2]}(cons{[double],[1]}(each{[int,double],[1]}(i2d,each{[bool,int],[1]}(b2i,reshape{[bool],[1,1]}([512],[ff]))),transp{[double],[2]}(drop{[double],[2]}(-1,v118)))) in
+                              let v148:[double]2 = zipWith{[double,double,double],[2]}(subd,zipWith{[double,double,double],[2]}(addd,v137,v140),zipWith{[double,double,double],[2]}(muld,each{[int,double],[2]}(i2d,v117),v118)) in
+                              let v160:[double]2 = each{[double,double],[2]}(fn v159:[double]0 => muld(divd(v110,v105),v159),zipWith{[double,double,double],[2]}(addd,v5,zipWith{[double,double,double],[2]}(addd,each{[double,double],[2]}(fn v154:[double]0 => divd(v154,v107),v148),zipWith{[double,double,double],[2]}(addd,each{[double,double],[2]}(fn v151:[double]0 => divd(v151,v106),v134),each{[double,double],[2]}(fn v150:[double]0 => divd(v150,v108),each{[double,double],[2]}(fn v149:[double]0 => subd(80.0,v149),v118)))))) in
+                              zipWith{[double,double,double],[2]}(addd,v118,v160),360,v4))),30,0.0)
